@@ -86,7 +86,7 @@ export default {
   },
   methods: {
     async getDeveloper() {
-      await this.$axios.get(`http://localhost:8080/developers/getall`).then((res) => {
+      await this.$axios.get(`http://localhost:8080/developers/random`).then((res) => {
         console.log(res)  
         if (res.status == 200) {
           this.data = res
