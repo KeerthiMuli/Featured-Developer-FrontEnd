@@ -1,8 +1,8 @@
 import VueRouter from 'vue-router';
 import Vue from 'vue';
 import Home from '../Home';
-
-//import DevelopersList from '../DevelopersList';
+import ViewAll from '../ViewAll';
+import Login from '../Login';
 
 Vue.use(VueRouter);
 
@@ -12,11 +12,15 @@ const routes = [{
     }, {
         path: "/home",
         component: Home
-    }
-    //{
-       // path: "/developersList",
-      //  component: DevelopersList,
-    //}
+    },
+    {
+       path: "/ViewAll",
+      component: ViewAll,
+    },
+    {
+        path: "/Login",
+       component: Login,
+     }
 ]
 
 
