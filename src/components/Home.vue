@@ -1,10 +1,11 @@
 <template>
   <div>
-    <b-row>
-      <h1>FEATURED DEVELOPER</h1>
-    </b-row>
+         <div class="header">
+  <h1>Featured Developers</h1>
+</div>
     <b-container fluid class="bgTheme">
       <div class="padding">
+         <a href="#/Login" id="login">Login</a>
         <div class="row container d-flex justify-content-center">
           <div class="col-xl-9">
             <div class="card">
@@ -20,7 +21,7 @@
                         width="100"
                       />
                     </div>
-                    <div class="f-w-600">{{this.data.data[0].fullName}}</div>
+                    <div class="f-w-600"><span style="font-weight:bold;">{{this.data.data[0].fullName}}</span></div>
 
                     
                     <i
@@ -34,40 +35,35 @@
                     ></i>
                   </div>
 
-                  <h6 class="m-b-20 p-b-5 b-b-default f-w-600">Details</h6>
-                  <div class="row">
-                    <div class="col-sm-6">
-                      <div class="m-b-10 f-w-600">Email</div>
-                      <div class="text-muted f-w-400">{{this.data.data[0].emailaddress}}</div>
-                    </div>
-                    <div class="col-sm-6">
-                      <div class="m-b-10 f-w-600">LinkedIn</div>
-                      <div class="text-muted f-w-400">{{this.data.data[0].linkedinurl}}</div>
-                    </div>
-                  </div>
-
-                  <div class="row">
-                    <div class="col-sm-6">
-                      <div class="m-b-10 f-w-600">Skills</div>
-                      <div class="text-muted f-w-400">{{this.data.data[0].skills}}</div>
-                    </div>
-                    <div class="col-sm-6">
-                      <div class="m-b-10 f-w-600">Goal</div>
-                      <div class="text-muted f-w-400">{{this.data.data[0].goals}}</div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-sm-6">
-                      <div>GithubUrl</div>
-                      <a slt="link to git" src="link to git"> {{this.data.data[0].githuburl}}</a>
-                    </div>
-                  </div>
+                  <h6 class="m-b-20 p-b-5 b-b-default f-w-600"><span style="font-weight:bold;">Details:</span></h6>
+                <table  align="center">
+                  <tr>
+                    <td><span class="names">Email:</span></td>
+                    <td>{{this.data.data[0].emailaddress}}</td>
+                  </tr>
+                  <tr>
+                    <td><span class="names">Skills:</span></td>
+                    <td>{{this.data.data[0].skills}}</td>
+                  </tr>
+                  <tr>
+                      <td><span class="names">Goal:</span></td>
+                    <td>{{this.data.data[0].goals}}</td>
+                  </tr>
+                  <tr>
+                    <td><span class="names">LinkedIn:</span></td>
+                    <td><a class="flex-child green" slt="link to git" src="link to git"> {{this.data.data[0].linkedinurl}}</a></td>
+                  </tr>
+                  <tr>
+                    <td><span class="names">GithubUrl:</span></td>
+                    <td><a class="flex-child green" slt="link to git" src="link to git"> {{this.data.data[0].githuburl}}</a></td>
+                  </tr>
+                </table>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <a href="#/developersList">View all</a>
+        <a href="#/ViewAll">View all</a>
       </div>
     </b-container>
   </div>
@@ -86,7 +82,7 @@ export default {
   },
   methods: {
     async getDeveloper() {
-      await this.$axios.get(`http://localhost:8080/developers/random`).then((res) => {
+      await this.$axios.get(`http://localhost:8080/developers/getall`).then((res) => {
         console.log(res)  
         if (res.status == 200) {
           this.data = res
@@ -108,6 +104,14 @@ export default {
 .bg-gray {
   background-color: rgb(24, 23, 23);
   color: #333;
+}
+
+.header {
+  padding: 50px;
+  text-align: center;
+  background: green;
+  color: white;
+  font-size: 30px;
 }
 
 .fixed {
@@ -158,5 +162,14 @@ export default {
   margin: 0 10px 0 0;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+}
+
+table td{
+  border: 1px #333;
+  padding: 6px 10px 4px 8px;
+}
+.names { font-weight: bold; }
+#login{
+  float: right;
 }
 </style>
