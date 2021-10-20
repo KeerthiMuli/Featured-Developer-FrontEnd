@@ -14,7 +14,7 @@
                   <div class="card-block text-center text-Black">
                     <div class="m-b-25">
                       <img
-                        src="../assets/a.jpg"
+                        :src= this.data.data[0].image
                         class="img-radius"
                         alt="User-Profile-Image"
                         height="100"
@@ -86,6 +86,7 @@ export default {
         console.log(res)  
         if (res.status == 200) {
           this.data = res
+          console.log("data=",this.data)
           
         }
       });
