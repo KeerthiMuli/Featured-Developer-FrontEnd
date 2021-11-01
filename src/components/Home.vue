@@ -4,8 +4,11 @@
   <h1>Featured Developers</h1>
 </div>
     <b-container fluid class="bgTheme">
-      <div class="padding">
-         <a href="#/Login" id="login">Login</a>
+      <div class="Padding">
+      </div>
+      <div class="Login">
+      <a href="#/Login" id="login">Login</a>
+      <a href="#/Signup" id="Signup">Signup</a>
         <div class="row container d-flex justify-content-center">
           <div class="col-xl-9">
             <div class="card">
@@ -23,7 +26,7 @@
                     </div>
                     <div class="f-w-600"><span style="font-weight:bold;">{{this.data.data[0].fullName}}</span></div>
 
-                    
+
                     <i
                       class="
                         mdi mdi-square-edit-outline
@@ -66,6 +69,11 @@
         <a href="#/ViewAll">View all</a>
       </div>
     </b-container>
+    <div class="footer"> 
+      <a>Featured Developer</a>
+      <br>
+      <a>CopyRight@2021</a>
+    </div>
   </div>
 </template>
 
@@ -82,7 +90,8 @@ export default {
   },
   methods: {
     async getDeveloper() {
-      await this.$axios.get(`http://localhost:8080/developers/getall`).then((res) => {
+          //await this.$axios.get(`http://localhost:8080/developers/getall`).then((res) => {
+      await this.$axios.get(`https://featured-developers-threeb.herokuapp.com/developers/getall`).then((res) => {
         console.log(res)  
         if (res.status == 200) {
           this.data = res
@@ -107,12 +116,24 @@ export default {
   color: #333;
 }
 
+.Login{
+
+}
+
 .header {
-  padding: 50px;
+  padding: 20px;
   text-align: center;
   background: green;
   color: white;
   font-size: 30px;
+}
+
+.footer{
+  padding: 20px;
+  text-align: center;
+  background: green;
+  color: white;
+  font-size: 15px;
 }
 
 .fixed {
@@ -131,8 +152,8 @@ export default {
   /* width: 15%; */
 }
 
-.padding {
-  padding: 3rem !important;
+.Padding {
+  padding:  3rem !important;
 }
 
 .user-card-full {
