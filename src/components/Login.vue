@@ -1,5 +1,6 @@
 <template>
 <form action="action_page.php" method="post">
+  
   <div class="imgcontainer">
     <img src="../assets/login.jpg" alt="Avatar" class="avatar">
   </div>
@@ -16,9 +17,11 @@
   </div>
 
   <div class="container" style="background-color:#f1f1f1">
+    <form action="../components/Signup.vue">
     <button type="button" class="signupbutton">Signup</button>
- 
+    </form>
   </div>
+
 </form>
 </template>
 <style scoped>
