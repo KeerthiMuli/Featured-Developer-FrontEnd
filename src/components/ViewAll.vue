@@ -56,7 +56,28 @@
 </template>
 <script>
 export default {
-  name: "ViewAll",
+  name: "Home",
+  mounted() {
+    this.getDeveloper();
+  },
+  data (){
+    return {
+      data: null
+    }
+  },
+  methods: {
+    async getDeveloper() {
+          await this.$axios.get(`http://localhost:8080/developers/getall`).then((res) => {
+      //await this.$axios.get(`https://featured-developers-threeb.herokuapp.com/developers/getall`).then((res) => {
+        console.log(res)  
+        if (res.status == 200) {
+          this.data = res
+          console.log("data=",this.data)
+          
+        }
+      });
+    },
+  },
 };
 </script>
 <style>
