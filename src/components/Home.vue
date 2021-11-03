@@ -76,15 +76,14 @@
       <a>CopyRight@2021</a>
       <br>
       </div>
-      <div class="rightfooter">
-      <a href="https://github.com/KeerthiMuli/Featured-Developer-Proposal/blob/main/Proposal.md">Proposal</a>
-      <a href="https://github.com/KeerthiMuli/Featured-Developer-ThreeB-frontend">Github Source Repo Frontend</a>
-      <a href="https://github.com/KeerthiMuli/Featured-Developer-ThreeB-backend">Github Source Repo Backend</a>
-      <a href="https://github.com/KeerthiMuli/Featured-Developer-Proposal/projects/1">Work planning</a>
-      </div>
-      <br>
       <a>Proposal 3B</a>
-
+      <br>
+      <div class="rightfooter">
+      <a href="https://github.com/KeerthiMuli/Featured-Developer-Proposal/blob/main/Proposal.md">Proposal ||</a>
+      <a href="https://github.com/KeerthiMuli/Featured-Developer-ThreeB-frontend"> Frontend Repo ||</a>
+      <a href="https://github.com/KeerthiMuli/Featured-Developer-ThreeB-backend"> Backend Repo ||</a>
+      <a href="https://github.com/KeerthiMuli/Featured-Developer-Proposal/projects/1"> Work planning</a>
+      </div>
     </div>
   </div>
 </template>
