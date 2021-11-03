@@ -1,11 +1,12 @@
 <template>
-  <div class="page-content page-container" id="page-content">
-      <h1>Featured Developers</h1>
-       <div class="addButton">
-      
-      <!--    <font-awesome-icon color="blue" icon="plus" /> -->
-        
-    </div>
+<div>
+        <div class="header">
+          <h1>Featured Developers</h1>
+        </div>
+        <div class="Home">
+        <a href="#/home">Home</a>
+        </div>
+        <br>
     <div class="container mt-3">
       <div class="col mb-4">
         <div class="card auto">
@@ -50,9 +51,23 @@
           </div>
         </div>
       </div>
+    
+    <br>
+    <br>
+    <div class="footer"> 
+      <a>Featured Developer</a>
+      <br>
+      <a>CopyRight@2021</a>
+      <br>
+      <a>Proposal 3B</a>
+      <br>
+      <a href="https://github.com/KeerthiMuli/Featured-Developer-Proposal/blob/main/Proposal.md">Proposal ||</a>
+      <a href="https://github.com/KeerthiMuli/Featured-Developer-ThreeB-frontend"> Frontend Repo ||</a>
+      <a href="https://github.com/KeerthiMuli/Featured-Developer-ThreeB-backend"> Backend Repo ||</a>
+      <a href="https://github.com/KeerthiMuli/Featured-Developer-Proposal/projects/1"> Work planning</a>
     </div>
-    <a href="#/home">Home</a>
   </div>
+</div>
 </template>
 <script>
 export default {
@@ -88,13 +103,27 @@ export default {
   padding-left: 20px;
   margin-bottom: 10px;
 }
-.header {
-  height: 90px;
-  width: 100%;
-  border: 1px solid #4caf50;
-  background-color: #006747;
+
+.Home{
+  float: right;
 }
 
+.header {
+  padding: 20px;
+  text-align: center;
+  background: green;
+  color: white;
+  font-size: 30px;
+}
+/* footer code */
+
+.footer{
+  padding: 10px;
+  text-align: center;
+  background: green;
+  color: white;
+  font-size: 15px;
+}
 
 
 p { text-align: initial;}

@@ -1,6 +1,10 @@
 <template>
+<div>
+        <div class="header"> 
+          <h1>Featured Developers</h1>
+        </div>
 <form action="action_page.php" method="post">
-  
+
   <div class="imgcontainer">
     <img src="../assets/login.jpg" alt="Avatar" class="avatar">
   </div>
@@ -22,7 +26,21 @@
     </form>
   </div>
 
+  <div class="footer"> 
+      <a>Featured Developer</a>
+      <br>
+      <a>CopyRight@2021</a>
+      <br>
+      <a>Proposal 3B</a>
+      <br>
+      <a href="https://github.com/KeerthiMuli/Featured-Developer-Proposal/blob/main/Proposal.md">Proposal ||</a>
+      <a href="https://github.com/KeerthiMuli/Featured-Developer-ThreeB-frontend"> Frontend Repo ||</a>
+      <a href="https://github.com/KeerthiMuli/Featured-Developer-ThreeB-backend"> Backend Repo ||</a>
+      <a href="https://github.com/KeerthiMuli/Featured-Developer-Proposal/projects/1"> Work planning</a>
+    </div>
+
 </form>
+</div>
 </template>
 <style scoped>
 /* Bordered form */
@@ -73,6 +91,24 @@ button:hover {
 img.avatar {
   width: 10%;
   border-radius: 30%;
+}
+
+.header {
+  padding: 20px;
+  text-align: center;
+  background: green;
+  color: white;
+  font-size: 30px;
+}
+
+/* footer code */
+
+.footer{
+  padding: 20px;
+  text-align: center;
+  background: green;
+  color: white;
+  font-size: 15px;
 }
 
 /* Add padding to containers */

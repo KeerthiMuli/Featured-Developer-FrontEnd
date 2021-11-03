@@ -24,6 +24,18 @@
    
   </div>
 
+<div class="footer"> 
+      <a>Featured Developer</a>
+      <br>
+      <a>CopyRight@2021</a>
+      <br>
+      <a>Proposal 3B</a>
+      <br>
+      <a href="https://github.com/KeerthiMuli/Featured-Developer-Proposal/blob/main/Proposal.md">Proposal ||</a>
+      <a href="https://github.com/KeerthiMuli/Featured-Developer-ThreeB-frontend"> Frontend Repo ||</a>
+      <a href="https://github.com/KeerthiMuli/Featured-Developer-ThreeB-backend"> Backend Repo ||</a>
+      <a href="https://github.com/KeerthiMuli/Featured-Developer-Proposal/projects/1"> Work planning</a>
+    </div>
   
 </form>
 </template>
@@ -108,5 +120,24 @@ span.psw {
     text-align: left;
     
   }
+
+  .header {
+  padding: 20px;
+  text-align: center;
+  background: green;
+  color: white;
+  font-size: 30px;
+}
+
+  /* footer code */
+
+.footer{
+  padding: 20px;
+  text-align: center;
+  background: green;
+  color: white;
+  font-size: 15px;
+}
+
 }
 </style>

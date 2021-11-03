@@ -8,6 +8,7 @@
       </div>
       <div class="Login">
       <a href="#/Login" id="login">Login</a>
+      <br>
       <a href="#/Signup" id="Signup">Signup</a>
         <div class="row container d-flex justify-content-center">
           <div class="col-xl-9">
