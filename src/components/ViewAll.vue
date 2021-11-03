@@ -13,11 +13,11 @@
           <div class="card-body">
             <img src="../assets/image.png" alt="Avatar" class="avatar">
             <h5 class="card-title">Person1</h5>
-            <p class="card-text">Role</p>
-            <p class="card-text">Skills</p>
-            <p class="card-text">link</p>
-            <p class="card-text">Goal</p>
-            <p class="card-text">Attainment</p>
+            <p class="card-text">Role: </p>
+            <p class="card-text">Skills: </p>
+            <p class="card-text">link: </p>
+            <p class="card-text">Goal: </p>
+            <p class="card-text">Attainment: </p>
           </div>
         </div>
       </div>
@@ -28,11 +28,11 @@
           <div class="card-body">
             <img src="../assets/image.png" alt="Avatar" class="avatar">
             <h5 class="card-title">Person2</h5>
-            <p class="card-text">Role</p>
-            <p class="card-text">Skills</p>
-            <p class="card-text">link</p>
-            <p class="card-text">Goal</p>
-            <p class="card-text">Attainment</p>
+            <p class="card-text">Role: </p>
+            <p class="card-text">Skills: </p>
+            <p class="card-text">link: </p>
+            <p class="card-text">Goal: </p>
+            <p class="card-text">Attainment: </p>
           </div>
         </div>
       </div>
@@ -42,11 +42,11 @@
           <div class="card-body">
             <img src="../assets/image.png" alt="Avatar" class="avatar">
             <h5 class="card-title">Person3</h5>
-            <p class="card-text">Role</p>
-            <p class="card-text">Skills</p>
-            <p class="card-text">link</p>
-            <p class="card-text">Goal</p>
-            <p class="card-text">Attainment</p>
+            <p class="card-text">Role: </p>
+            <p class="card-text">Skills: </p>
+            <p class="card-text">link: </p>
+            <p class="card-text">Goal: </p>
+            <p class="card-text">Attainment: </p>
           </div>
         </div>
       </div>
@@ -56,7 +56,7 @@
 </template>
 <script>
 export default {
-  name: "Home",
+  name: "ViewAll",
   mounted() {
     this.getDeveloper();
   },
@@ -94,5 +94,8 @@ export default {
   border: 1px solid #4caf50;
   background-color: #006747;
 }
+
+
+
 p { text-align: initial;}
 </style>

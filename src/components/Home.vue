@@ -70,9 +70,21 @@
       </div>
     </b-container>
     <div class="footer"> 
+      <div class="leftfooter">
       <a>Featured Developer</a>
       <br>
       <a>CopyRight@2021</a>
+      <br>
+      </div>
+      <div class="rightfooter">
+      <a href="https://github.com/KeerthiMuli/Featured-Developer-Proposal/blob/main/Proposal.md">Proposal</a>
+      <a href="https://github.com/KeerthiMuli/Featured-Developer-ThreeB-frontend">Github Source Repo Frontend</a>
+      <a href="https://github.com/KeerthiMuli/Featured-Developer-ThreeB-backend">Github Source Repo Backend</a>
+      <a href="https://github.com/KeerthiMuli/Featured-Developer-Proposal/projects/1">Work planning</a>
+      </div>
+      <br>
+      <a>Proposal 3B</a>
+
     </div>
   </div>
 </template>
@@ -90,8 +102,8 @@ export default {
   },
   methods: {
     async getDeveloper() {
-          //await this.$axios.get(`http://localhost:8080/developers/getall`).then((res) => {
-      await this.$axios.get(`https://featured-developers-threeb.herokuapp.com/developers/getall`).then((res) => {
+         await this.$axios.get(`http://localhost:8080/developers/getall`).then((res) => {
+      //await this.$axios.get(`https://featured-developers-threeb.herokuapp.com/developers/getall`).then((res) => {
         console.log(res)  
         if (res.status == 200) {
           this.data = res
@@ -114,10 +126,6 @@ export default {
 .bg-gray {
   background-color: rgb(24, 23, 23);
   color: #333;
-}
-
-.Login{
-
 }
 
 .header {
