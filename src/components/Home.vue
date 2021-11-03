@@ -1,8 +1,8 @@
 <template>
   <div>
-         <div class="header">
-  <h1>Featured Developers</h1>
-</div>
+        <div class="header">
+          <h1>Featured Developers</h1>
+        </div>
     <b-container fluid class="bgTheme">
       <div class="Padding">
       </div>
@@ -71,20 +71,16 @@
       </div>
     </b-container>
     <div class="footer"> 
-      <div class="leftfooter">
       <a>Featured Developer</a>
       <br>
       <a>CopyRight@2021</a>
       <br>
-      </div>
       <a>Proposal 3B</a>
       <br>
-      <div class="rightfooter">
       <a href="https://github.com/KeerthiMuli/Featured-Developer-Proposal/blob/main/Proposal.md">Proposal ||</a>
       <a href="https://github.com/KeerthiMuli/Featured-Developer-ThreeB-frontend"> Frontend Repo ||</a>
       <a href="https://github.com/KeerthiMuli/Featured-Developer-ThreeB-backend"> Backend Repo ||</a>
       <a href="https://github.com/KeerthiMuli/Featured-Developer-Proposal/projects/1"> Work planning</a>
-      </div>
     </div>
   </div>
 </template>
@@ -102,8 +98,8 @@ export default {
   },
   methods: {
     async getDeveloper() {
-         await this.$axios.get(`http://localhost:8080/developers/getall`).then((res) => {
-      //await this.$axios.get(`https://featured-developers-threeb.herokuapp.com/developers/getall`).then((res) => {
+        // await this.$axios.get(`http://localhost:8080/developers/getall`).then((res) => {
+      await this.$axios.get(`https://featured-developers-threeb.herokuapp.com/developers/getall`).then((res) => {
         console.log(res)  
         if (res.status == 200) {
           this.data = res
