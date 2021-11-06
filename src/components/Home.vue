@@ -9,7 +9,9 @@
       <a href="#/Signup" id="Signup">Signup</a>
       <div class="Login">
       <a href="#/Login" id="login">Login</a>
-      <br>
+      <div class="ViewAll">
+      <a href="#/ViewAll" id="ViewAll">ViewAll</a>
+      </div>
       </div>
       </div>
       </div>
@@ -59,9 +61,12 @@
               </div>
           </div>
         </div>
-        <a href="#/ViewAll">View all</a>
+        
       </div>
+      <br>
+    <br>
     </b-container>
+    
     <div class="footer"> 
       <a>Featured Developer || CopyRight@2021 </a>
       <br>
@@ -119,6 +124,16 @@ export default {
 
 }
 
+.row {
+    --bs-gutter-x: -5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(var(--bs-gutter-y) * -1);
+    margin-right: calc(var(--bs-gutter-x) * -.5);
+    margin-left: calc(var(--bs-gutter-x) * -.5);
+}
+
 .header {
   padding: 20px;
   text-align: center;
@@ -147,7 +162,7 @@ export default {
 }
 
  .bgTheme { 
-   background-color: antiquewhite;
+   background-color: whitesmoke;
   /* background-image : url("../assets/b.jpg"); */
  } 
 
@@ -162,6 +177,7 @@ export default {
 
 .user-card-full {
   overflow: hidden;
+  margin-bottom: 50%;
 }
 
 .card {
@@ -170,7 +186,10 @@ export default {
   -webkit-box-shadow: 0 1px 20px 0 rgba(69, 90, 100, 0.08);
   box-shadow: 0 1px 20px 0 rgba(69, 90, 100, 0.08);
   border: none;
-  margin-bottom: 30px;
+  margin-bottom: 5px; 
+  margin-top: 5px; 
+  margin-left: 5px;
+  margin-right: 5px;
   background-color: antiquewhite;
 }
 
@@ -209,9 +228,17 @@ table td{
 
 #login{
   float: right;
-  padding-right: 5%;
+  padding-right: 2%;
+  color: rgb(231, 142, 25);
 }
 #Signup{
   float: right;
+  color: rgb(231, 142, 25);
 }
+#ViewAll{
+  float: right;
+   padding-right: 2% ;
+   color: rgb(231, 142, 25);
+}
+
 </style>
