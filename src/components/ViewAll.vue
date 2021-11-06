@@ -1,12 +1,13 @@
 <template>
+<div class = "topdiv" >
 <div>
         <div class="header">
           <h1>Featured Developers</h1>
         </div>
         <div class="Home">
-        <a href="#/home">Home</a>
-        </div>
-        <br>
+      <a href="#/Home" id="Home">Home</a>
+      <br>
+      </div>
     <div class="container mt-3">
       <div class="col mb-4">
         <div class="card auto">
@@ -51,23 +52,22 @@
           </div>
         </div>
       </div>
-    
     <br>
-    <br>
-    <div class="footer"> 
-      <a>Featured Developer</a>
-      <br>
-      <a>CopyRight@2021</a>
+  </div>
+</div>
+<div class="footer"> 
+      <a>Featured Developer || CopyRight@2021 </a>
       <br>
       <a>Proposal 3B</a>
       <br>
-      <a href="https://github.com/KeerthiMuli/Featured-Developer-Proposal/blob/main/Proposal.md">Proposal ||</a>
-      <a href="https://github.com/KeerthiMuli/Featured-Developer-ThreeB-frontend"> Frontend Repo ||</a>
-      <a href="https://github.com/KeerthiMuli/Featured-Developer-ThreeB-backend"> Backend Repo ||</a>
-      <a href="https://github.com/KeerthiMuli/Featured-Developer-Proposal/projects/1"> Work planning</a>
+      <a class="link" href="https://github.com/KeerthiMuli/Featured-Developer-Proposal/blob/main/Proposal.md">Proposal ||</a>
+      <a class="link" href="https://github.com/KeerthiMuli/Featured-Developer-ThreeB-frontend"> Frontend Repo ||</a>
+      <a class="link" href="https://github.com/KeerthiMuli/Featured-Developer-ThreeB-backend"> Backend Repo ||</a>
+      <a class="link" href="https://github.com/KeerthiMuli/Featured-Developer-Proposal/projects/1"> Work planning</a>
     </div>
-  </div>
 </div>
+
+
 </template>
 <script>
 export default {
@@ -104,10 +104,11 @@ export default {
   margin-bottom: 10px;
 }
 
-.Home{
-  float: right;
+#Home{
+   float:left;
+   padding-left: 2% ;
+   color: rgb(231, 142, 25);
 }
-
 .header {
   padding: 20px;
   text-align: center;
@@ -127,6 +128,22 @@ export default {
   font-size: 15px;
 }
 
+.link{
+  color:white;
+}
 
+.link:hover{
+  color:black;
+}
+
+.card-body{
+ background-color: antiquewhite;
+}
+
+.topdiv {
+  margin-top: -5%;
+  margin-left: -1%;
+  margin-right: -1%;
+}
 p { text-align: initial;}
 </style>
