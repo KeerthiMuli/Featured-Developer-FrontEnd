@@ -1,4 +1,5 @@
 <template>
+<div class = "topdiv" >
 <form action="action_page.php" method="post">
     <div class="header">
       <h1>Featured Developers</h1>
@@ -6,7 +7,10 @@
   <div class="signuplogo">
         <a>Signup</a>
   </div>
-
+<div class="Home">
+      <a href="#/Home" id="Home">Home</a>
+      <br>
+      </div>
   <div class="container">
     <label for="uname"><b>Username</b></label>
     <br>
@@ -25,19 +29,17 @@
   </div>
 
 <div class="footer"> 
-      <a>Featured Developer</a>
-      <br>
-      <a>CopyRight@2021</a>
+      <a>Featured Developer || CopyRight@2021 </a>
       <br>
       <a>Proposal 3B</a>
       <br>
-      <a href="https://github.com/KeerthiMuli/Featured-Developer-Proposal/blob/main/Proposal.md">Proposal ||</a>
-      <a href="https://github.com/KeerthiMuli/Featured-Developer-ThreeB-frontend"> Frontend Repo ||</a>
-      <a href="https://github.com/KeerthiMuli/Featured-Developer-ThreeB-backend"> Backend Repo ||</a>
-      <a href="https://github.com/KeerthiMuli/Featured-Developer-Proposal/projects/1"> Work planning</a>
+      <a class="link" href="https://github.com/KeerthiMuli/Featured-Developer-Proposal/blob/main/Proposal.md">Proposal ||</a>
+      <a class="link" href="https://github.com/KeerthiMuli/Featured-Developer-ThreeB-frontend"> Frontend Repo ||</a>
+      <a class="link" href="https://github.com/KeerthiMuli/Featured-Developer-ThreeB-backend"> Backend Repo ||</a>
+      <a class="link" href="https://github.com/KeerthiMuli/Featured-Developer-Proposal/projects/1"> Work planning</a>
     </div>
-  
 </form>
+</div>
 </template>
 <style scoped>
 /* Bordered form */
@@ -57,7 +59,7 @@ input[type=text], input[type=password] {
 
 /* Set a style for all buttons */
 button {
-  background-color: #04AA6D;
+  background-color: rgb(231, 142, 25);
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
@@ -86,7 +88,7 @@ button:hover {
 .signuplogo {
   text-align: center;
   margin: 24px 0 12px 0;
-  color: #04AA6D;
+  color: rgb(231, 142, 25);
   font-size: 30px;
   display: block
 }
@@ -138,6 +140,26 @@ span.psw {
   background: rgb(231, 142, 25);
   color: white;
   font-size: 15px;
+}
+
+.link{
+  color:white;
+}
+
+.link:hover{
+  color:black;
+}
+
+.topdiv {
+  margin-top: -5%;
+  margin-left: -1%;
+  margin-right: -1%;
+}
+
+#Home{
+  flex: left;
+   padding-left: 2% ;
+   color: rgb(231, 142, 25);
 }
 
 }
