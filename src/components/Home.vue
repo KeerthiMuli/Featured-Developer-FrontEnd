@@ -1,20 +1,23 @@
-<template>
-  <div>
+<template >
+  <div class = "topdiv" >
         <div class="header">
           <h1>Featured Developers</h1>
         </div>
     <b-container fluid class="bgTheme">
       <div class="Padding">
-      </div>
+      <div>
+      <a href="#/Signup" id="Signup">Signup</a>
       <div class="Login">
       <a href="#/Login" id="login">Login</a>
       <br>
-      <a href="#/Signup" id="Signup">Signup</a>
+      </div>
+      </div>
+      </div>
         <div class="row container d-flex justify-content-center">
           <div class="col-xl-9">
             <div class="card">
               <div class="row">
-                <div class="col-sm-12 bg-c-lite-green user-profile">
+                <div class="col-sm-12 bg-c-lite-pink user-profile">
                   <div class="card-block text-center text-Black">
                     <div class="m-b-25">
                       <img
@@ -26,17 +29,7 @@
                       />
                     </div>
                     <div class="f-w-600"><span style="font-weight:bold;">{{this.data.data[0].fullName}}</span></div>
-
-
-                    <i
-                      class="
-                        mdi mdi-square-edit-outline
-                        feather
-                        icon-edit
-                        m-t-10
-                        f-16
-                      "
-                    ></i>
+                    <i class="mdi mdi-square-edit-outline feather icon-edit m-t-10 f-16"></i>
                   </div>
 
                   <h6 class="m-b-20 p-b-5 b-b-default f-w-600"><span style="font-weight:bold;">Details:</span></h6>
@@ -64,23 +57,20 @@
                 </table>
                 </div>
               </div>
-            </div>
           </div>
         </div>
         <a href="#/ViewAll">View all</a>
       </div>
     </b-container>
     <div class="footer"> 
-      <a>Featured Developer</a>
-      <br>
-      <a>CopyRight@2021</a>
+      <a>Featured Developer || CopyRight@2021 </a>
       <br>
       <a>Proposal 3B</a>
       <br>
-      <a href="https://github.com/KeerthiMuli/Featured-Developer-Proposal/blob/main/Proposal.md">Proposal ||</a>
-      <a href="https://github.com/KeerthiMuli/Featured-Developer-ThreeB-frontend"> Frontend Repo ||</a>
-      <a href="https://github.com/KeerthiMuli/Featured-Developer-ThreeB-backend"> Backend Repo ||</a>
-      <a href="https://github.com/KeerthiMuli/Featured-Developer-Proposal/projects/1"> Work planning</a>
+      <a class="link" href="https://github.com/KeerthiMuli/Featured-Developer-Proposal/blob/main/Proposal.md">Proposal ||</a>
+      <a class="link" href="https://github.com/KeerthiMuli/Featured-Developer-ThreeB-frontend"> Frontend Repo ||</a>
+      <a class="link" href="https://github.com/KeerthiMuli/Featured-Developer-ThreeB-backend"> Backend Repo ||</a>
+      <a class="link" href="https://github.com/KeerthiMuli/Featured-Developer-Proposal/projects/1"> Work planning</a>
     </div>
   </div>
 </template>
@@ -98,7 +88,7 @@ export default {
   },
   methods: {
     async getDeveloper() {
-        // await this.$axios.get(`http://localhost:8080/developers/getall`).then((res) => {
+      // await this.$axios.get(`http://localhost:8080/developers/getall`).then((res) => {
       await this.$axios.get(`https://featured-developers-threeb.herokuapp.com/developers/getall`).then((res) => {
         console.log(res)  
         if (res.status == 200) {
@@ -124,18 +114,27 @@ export default {
   color: #333;
 }
 
+.col-xl-9{
+  background-color: bisque;
+
+}
+
 .header {
   padding: 20px;
   text-align: center;
-  background: green;
+  background: rgb(231, 142, 25);
   color: white;
   font-size: 30px;
 }
-
+.topdiv {
+  margin-top: -5%;
+  margin-left: -1%;
+  margin-right: -1%;
+}
 .footer{
   padding: 20px;
   text-align: center;
-  background: green;
+  background: rgb(231, 142, 25);
   color: white;
   font-size: 15px;
 }
@@ -147,9 +146,10 @@ export default {
   width: 100%;
 }
 
-.bgTheme {
-  background-image: url("../assets/bgcolor2.jpg");
-}
+ .bgTheme { 
+   background-color: antiquewhite;
+  /* background-image : url("../assets/b.jpg"); */
+ } 
 
 .h3-dispaly {
   display: flex;
@@ -165,11 +165,21 @@ export default {
 }
 
 .card {
+  flex: center;
   border-radius: 5px;
   -webkit-box-shadow: 0 1px 20px 0 rgba(69, 90, 100, 0.08);
   box-shadow: 0 1px 20px 0 rgba(69, 90, 100, 0.08);
   border: none;
   margin-bottom: 30px;
+  background-color: antiquewhite;
+}
+
+.link{
+  color:white;
+}
+
+.link:hover{
+  color:black;
 }
 
 .bg-c-lite-green {
@@ -177,7 +187,8 @@ export default {
   background: linear-gradient(to right, #f7f5f5, #f8f7f7);
 }
 .card-block {
-  padding: 1.25rem;
+  -ms-flex-align: center;
+  /* padding: 1.25rem; */
 }
 .user-card-full .social-link li {
   display: inline-block;
@@ -195,7 +206,12 @@ table td{
   padding: 6px 10px 4px 8px;
 }
 .names { font-weight: bold; }
+
 #login{
+  float: right;
+  padding-right: 5%;
+}
+#Signup{
   float: right;
 }
 </style>

@@ -124,17 +124,18 @@ span.psw {
   .header {
   padding: 20px;
   text-align: center;
-  background: green;
+  background: rgb(231, 142, 25);
   color: white;
   font-size: 30px;
 }
 
-  /* footer code */
+
+/* footer code */
 
 .footer{
   padding: 20px;
   text-align: center;
-  background: green;
+  background: rgb(231, 142, 25);
   color: white;
   font-size: 15px;
 }

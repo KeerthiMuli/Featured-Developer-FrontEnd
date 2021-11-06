@@ -3,8 +3,9 @@
         <div class="header"> 
           <h1>Featured Developers</h1>
         </div>
+        
 <form action="action_page.php" method="post">
-
+<div class = "bgc">
   <div class="imgcontainer">
     <img src="../assets/login.jpg" alt="Avatar" class="avatar">
   </div>
@@ -38,9 +39,10 @@
       <a href="https://github.com/KeerthiMuli/Featured-Developer-ThreeB-backend"> Backend Repo ||</a>
       <a href="https://github.com/KeerthiMuli/Featured-Developer-Proposal/projects/1"> Work planning</a>
     </div>
-
+    </div>
 </form>
 </div>
+
 </template>
 <style scoped>
 /* Bordered form */
@@ -56,6 +58,10 @@ input[type=text], input[type=password] {
   display: inline-block;
   border: 1px solid #ccc;
   box-sizing: border-box;
+}
+
+.data-v-ef68022e{
+  background-color: antiquewhite;
 }
 
 /* Set a style for all buttons */
@@ -96,17 +102,18 @@ img.avatar {
 .header {
   padding: 20px;
   text-align: center;
-  background: green;
+  background: rgb(231, 142, 25);
   color: white;
   font-size: 30px;
 }
+
 
 /* footer code */
 
 .footer{
   padding: 20px;
   text-align: center;
-  background: green;
+  background: rgb(231, 142, 25);
   color: white;
   font-size: 15px;
 }
