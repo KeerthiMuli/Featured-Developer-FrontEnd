@@ -1,10 +1,16 @@
 <template>
+<div class = "topdiv" >
 <div>
         <div class="header"> 
           <h1>Featured Developers</h1>
         </div>
         
+        
 <form action="action_page.php" method="post">
+  <div class="Home">
+      <a href="#/Home" id="Home">Home</a>
+      <br>
+      </div>
 <div class = "bgc">
   <div class="imgcontainer">
     <img src="../assets/login.jpg" alt="Avatar" class="avatar">
@@ -12,37 +18,38 @@
 
   <div class="container">
     <label for="uname"><b>Username</b></label>
+    <br>
     <input type="text" placeholder="Enter Username" name="uname" required>
-
+<br>
     <label for="psw"><b>Password</b></label>
+    <br>
     <input type="password" placeholder="Enter Password" name="psw" required>
-
-    <button type="submit">Login</button>
+<br>
+    <button class="submit">Login</button>
    
   </div>
 
-  <div class="container" style="background-color:#f1f1f1">
+  <!-- <div class="container" style="background-color:#f1f1f1">
     <form action="../components/Signup.vue">
     <button type="button" class="signupbutton">Signup</button>
     </form>
-  </div>
+  </div> -->
 
   <div class="footer"> 
-      <a>Featured Developer</a>
-      <br>
-      <a>CopyRight@2021</a>
+      <a>Featured Developer || CopyRight@2021 </a>
       <br>
       <a>Proposal 3B</a>
       <br>
-      <a href="https://github.com/KeerthiMuli/Featured-Developer-Proposal/blob/main/Proposal.md">Proposal ||</a>
-      <a href="https://github.com/KeerthiMuli/Featured-Developer-ThreeB-frontend"> Frontend Repo ||</a>
-      <a href="https://github.com/KeerthiMuli/Featured-Developer-ThreeB-backend"> Backend Repo ||</a>
-      <a href="https://github.com/KeerthiMuli/Featured-Developer-Proposal/projects/1"> Work planning</a>
+      <a class="link" href="https://github.com/KeerthiMuli/Featured-Developer-Proposal/blob/main/Proposal.md">Proposal ||</a>
+      <a class="link" href="https://github.com/KeerthiMuli/Featured-Developer-ThreeB-frontend"> Frontend Repo ||</a>
+      <a class="link" href="https://github.com/KeerthiMuli/Featured-Developer-ThreeB-backend"> Backend Repo ||</a>
+      <a class="link" href="https://github.com/KeerthiMuli/Featured-Developer-Proposal/projects/1"> Work planning</a>
     </div>
     </div>
+    
 </form>
 </div>
-
+</div>
 </template>
 <style scoped>
 /* Bordered form */
@@ -50,29 +57,34 @@ form {
   border: 3px solid #f1f1f1;
 }
 
+.topdiv {
+  margin-top: -5%;
+  margin-left: -1%;
+  margin-right: -1%;
+}
+
 /* Full-width inputs */
 input[type=text], input[type=password] {
-  width: 100%;
+  width: 30%;
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
-  border: 1px solid #ccc;
+  border: 2px solid #ccc;
   box-sizing: border-box;
 }
 
-.data-v-ef68022e{
-  background-color: antiquewhite;
-}
+
+
 
 /* Set a style for all buttons */
 button {
-  background-color: #04AA6D;
+  background-color: rgb(231, 142, 25);
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
-  border: none;
+  border: 2px solid #ccc;
   cursor: pointer;
-  width: 100%;
+  width: 30%;
 }
 
 /* Add a hover effect for buttons */
@@ -81,11 +93,11 @@ button:hover {
 }
 
 /* Extra style for the cansignupbutton (red) */
-.signupbutton {
+/* .signupbutton {
   width: auto;
   padding: 10px 18px;
   background-color: #f44336;
-}
+} */
 
 /* Center the avatar image inside this container */
 .imgcontainer {
@@ -118,10 +130,19 @@ img.avatar {
   font-size: 15px;
 }
 
+.link{
+  color:white;
+}
+
+.link:hover{
+  color:black;
+}
+
 /* Add padding to containers */
 .container {
   padding: 16px;
 }
+
 
 /* The "Forgot password" text */
 span.psw {
@@ -129,14 +150,20 @@ span.psw {
   padding-top: 16px;
 }
 
-/* Change styles for span and signupbutton on extra small screens */
+#Home{
+  flex: left;
+   padding-left: 2% ;
+   color: rgb(231, 142, 25);
+}
+
+/* Change styles for span and signupbutton on extra small screens
 @media screen and (max-width: 300px) {
   span.psw {
     display: block;
     float: none;
-  }
-  .signupbutton {
+  } */
+  /* .signupbutton {
     width: 100%;
-  }
-}
+  } */
+/* } */
 </style>
