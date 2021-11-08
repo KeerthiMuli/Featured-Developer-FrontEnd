@@ -61,51 +61,6 @@
           <div class="card-body">
             <div class="m-b-25">
                       <img
-                        :src= this.data.data[3].image
-                        class="img-radius"
-                        alt="User-Profile-Image"
-                        height="100"
-                        width="100"
-                      />
-                    </div>
-                    <br>
-            <div class="f-w-600"><span style="font-weight:bold;">{{this.data.data[3].fullName}}</span></div>
-            <br>
-            <table  align="center">
-                  <tr>
-                    <td><span style="font-weight:bold;" class="names">DeveloperID:</span></td>
-                    <td>{{this.data.data[3].developerId}}</td>
-                  </tr>
-                  <br>
-                  <tr>
-                    <td><span style="font-weight:bold;" class="names">Skills:</span></td>
-                    <td>{{this.data.data[3].skills}}</td>
-                  </tr>
-                  <br>
-                  <tr>
-                      <td><span style="font-weight:bold;" class="names">Goal:</span></td>
-                    <td>{{this.data.data[3].goals}}</td>
-                  </tr>
-                  <br>
-                  <tr>
-                    <td><span style="font-weight:bold;" class="names">LinkedIn:</span></td>
-                    <td><a class="flex-child green" slt="link to git" src="link to git"> {{this.data.data[3].linkedinurl}}</a></td>
-                  </tr>
-                  <br>
-                  <tr>
-                    <td><span style="font-weight:bold;" class="names">GithubUrl:</span></td>
-                    <td><a class="flex-child green" slt="link to git" src="link to git"> {{this.data.data[3].githuburl}}</a></td>
-                  </tr>
-                </table>
-          </div>
-        </div>
-      </div>
-      <div class="col mb-4">
-        <div class="card h-100">
-          <!-- <img src="..." class="card-img-top" alt="..."> -->
-          <div class="card-body">
-            <div class="m-b-25">
-                      <img
                         :src= this.data.data[2].image
                         class="img-radius"
                         alt="User-Profile-Image"
@@ -140,6 +95,51 @@
                   <tr>
                     <td><span style="font-weight:bold;" class="names">GithubUrl:</span></td>
                     <td><a class="flex-child green" slt="link to git" src="link to git"> {{this.data.data[2].githuburl}}</a></td>
+                  </tr>
+                </table>
+          </div>
+        </div>
+      </div>
+      <div class="col mb-4">
+        <div class="card h-100">
+          <!-- <img src="..." class="card-img-top" alt="..."> -->
+          <div class="card-body">
+            <div class="m-b-25">
+                      <img
+                        :src= this.data.data[3].image
+                        class="img-radius"
+                        alt="User-Profile-Image"
+                        height="100"
+                        width="100"
+                      />
+                    </div>
+                    <br>
+            <div class="f-w-600"><span style="font-weight:bold;">{{this.data.data[2].fullName}}</span></div>
+            <br>
+            <table  align="center">
+                  <tr>
+                    <td><span style="font-weight:bold;" class="names">DeveloperID:</span></td>
+                    <td>{{this.data.data[3].developerId}}</td>
+                  </tr>
+                  <br>
+                  <tr>
+                    <td><span style="font-weight:bold;" class="names">Skills:</span></td>
+                    <td>{{this.data.data[3].skills}}</td>
+                  </tr>
+                  <br>
+                  <tr>
+                      <td><span style="font-weight:bold;" class="names">Goal:</span></td>
+                    <td>{{this.data.data[3].goals}}</td>
+                  </tr>
+                  <br>
+                  <tr>
+                    <td><span style="font-weight:bold;" class="names">LinkedIn:</span></td>
+                    <td><a class="flex-child green" slt="link to git" src="link to git"> {{this.data.data[3].linkedinurl}}</a></td>
+                  </tr>
+                  <br>
+                  <tr>
+                    <td><span style="font-weight:bold;" class="names">GithubUrl:</span></td>
+                    <td><a class="flex-child green" slt="link to git" src="link to git"> {{this.data.data[3].githuburl}}</a></td>
                   </tr>
                 </table>
           </div>
