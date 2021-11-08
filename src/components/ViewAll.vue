@@ -114,7 +114,7 @@
                       />
                     </div>
                     <br>
-            <div class="f-w-600"><span style="font-weight:bold;">{{this.data.data[2].fullName}}</span></div>
+            <div class="f-w-600"><span style="font-weight:bold;">{{this.data.data[3].fullName}}</span></div>
             <br>
             <table  align="center">
                   <tr>
