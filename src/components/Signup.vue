@@ -9,8 +9,11 @@
   </div>
 <div class="Home">
       <a href="#/Home" id="Home">Home</a>
-      <br>
+
+      <a href="#/ViewAll" id="ViewAll">ViewAll</a>
       </div>
+<br>
+
   <div class="container">
     <label for="uname"><b>Username</b></label>
     <br>
@@ -41,6 +44,20 @@
 </form>
 </div>
 </template>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+
 <style scoped>
 /* Bordered form */
 form {
@@ -162,5 +179,11 @@ span.psw {
    color: rgb(231, 142, 25);
 }
 
+}
+
+#ViewAll{
+  float: right;
+   padding-right: 2% ;
+   color: rgb(231, 142, 25);
 }
 </style>
