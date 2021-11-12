@@ -9,8 +9,9 @@
 <form action="action_page.php" method="post">
   <div class="Home">
       <a href="#/Home" id="Home">Home</a>
-      <br>
+       <a href="#/ViewAll" id="ViewAll">ViewAll</a>
       </div>
+<br>
 <div class = "bgc">
   <div class="imgcontainer">
     <img src="../assets/login.jpg" alt="Avatar" class="avatar">
@@ -51,6 +52,16 @@
 </div>
 </div>
 </template>
+
+<script>
+export default {
+  name: "Login",
+  methods: {
+    login() {},
+  },
+};
+</script>
+
 <style scoped>
 /* Bordered form */
 form {
@@ -153,6 +164,13 @@ span.psw {
 #Home{
   flex: left;
    padding-left: 2% ;
+   color: rgb(231, 142, 25);
+}
+
+
+#ViewAll{
+  float: right;
+   padding-right: 2% ;
    color: rgb(231, 142, 25);
 }
 
