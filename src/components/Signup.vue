@@ -26,6 +26,12 @@
     <input type="password" placeholder="Enter Password" name="psw" required>
    </div>
 
+   <div class="container">
+    <label for="psw"><b>Confirm Password</b></label>
+    <br>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+   </div>
+
 <div class="container"> 
     <button type="submit">Signup</button>
    
